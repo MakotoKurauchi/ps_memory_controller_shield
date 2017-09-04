@@ -1,0 +1,497 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MYDEVICE
+LIBS:ps_memory_controller_shield-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ProMicro U1
+U 1 1 598E7779
+P 6850 4750
+F 0 "U1" H 7250 5750 60  0000 C CNN
+F 1 "ProMicro" V 6650 4750 60  0000 C CNN
+F 2 "MYLIB:ProMicro" H 6850 4850 60  0001 C CNN
+F 3 "" H 6850 4850 60  0000 C CNN
+	1    6850 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 4300 2    60   Input ~ 0
+data
+Text GLabel 3350 4400 2    60   Input ~ 0
+command
+Text GLabel 3350 4800 2    60   Input ~ 0
+attention
+Text GLabel 3350 4900 2    60   Input ~ 0
+clock
+Text GLabel 3350 5000 2    60   Input ~ 0
+acknowledge
+$Comp
+L +5V #PWR01
+U 1 1 598E8161
+P 4050 4450
+F 0 "#PWR01" H 4050 4300 50  0001 C CNN
+F 1 "+5V" H 4050 4590 50  0000 C CNN
+F 2 "" H 4050 4450 50  0000 C CNN
+F 3 "" H 4050 4450 50  0000 C CNN
+	1    4050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 598E8195
+P 4300 4700
+F 0 "#PWR02" H 4300 4550 50  0001 C CNN
+F 1 "+3.3V" H 4300 4840 50  0000 C CNN
+F 2 "" H 4300 4700 50  0000 C CNN
+F 3 "" H 4300 4700 50  0000 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4500 4050 4500
+Wire Wire Line
+	4050 4500 4050 4450
+Wire Wire Line
+	3350 4600 4050 4600
+Wire Wire Line
+	3350 4700 4300 4700
+Wire Wire Line
+	4050 4600 4050 5550
+Text GLabel 7750 5100 2    60   Input ~ 0
+data
+Text GLabel 7750 5000 2    60   Input ~ 0
+command
+Text GLabel 7750 4900 2    60   Input ~ 0
+attention
+Text GLabel 7750 5200 2    60   Input ~ 0
+clock
+Text GLabel 7500 4100 2    60   Input ~ 0
+acknowledge
+$Comp
+L +5V #PWR03
+U 1 1 598E8331
+P 6650 3600
+F 0 "#PWR03" H 6650 3450 50  0001 C CNN
+F 1 "+5V" H 6650 3740 50  0000 C CNN
+F 2 "" H 6650 3600 50  0000 C CNN
+F 3 "" H 6650 3600 50  0000 C CNN
+	1    6650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 598E8345
+P 6650 5900
+F 0 "#PWR04" H 6650 5650 50  0001 C CNN
+F 1 "GND" H 6650 5750 50  0000 C CNN
+F 2 "" H 6650 5900 50  0000 C CNN
+F 3 "" H 6650 5900 50  0000 C CNN
+	1    6650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5900 6750 5900
+Connection ~ 6650 5900
+$Comp
+L CONN_01X06 P3
+U 1 1 598E86E0
+P 3050 2050
+F 0 "P3" H 3050 2400 50  0000 C CNN
+F 1 "ICSP" V 3150 2050 50  0000 C CNN
+F 2 "MYLIB:MY_SIL-2x3" H 3050 2050 50  0001 C CNN
+F 3 "" H 3050 2050 50  0000 C CNN
+	1    3050 2050
+	-1   0    0    -1  
+$EndComp
+Text Label 7500 5000 0    60   ~ 0
+MOSI
+Text Label 7500 5100 0    60   ~ 0
+MISO
+Text Label 7500 5200 0    60   ~ 0
+SCK
+Text Label 7500 4900 0    60   ~ 0
+D10
+Wire Wire Line
+	7500 4900 7750 4900
+Wire Wire Line
+	7500 5000 7750 5000
+Wire Wire Line
+	7500 5100 7750 5100
+Wire Wire Line
+	7500 5200 7750 5200
+Text Label 3250 1800 0    60   ~ 0
+MISO
+$Comp
+L +5V #PWR05
+U 1 1 598E904A
+P 3600 1900
+F 0 "#PWR05" H 3600 1750 50  0001 C CNN
+F 1 "+5V" H 3600 2040 50  0000 C CNN
+F 2 "" H 3600 1900 50  0000 C CNN
+F 3 "" H 3600 1900 50  0000 C CNN
+	1    3600 1900
+	1    0    0    -1  
+$EndComp
+Text Label 3250 2000 0    60   ~ 0
+SCK
+Text Label 3250 2100 0    60   ~ 0
+MOSI
+Text Label 4200 1800 3    60   ~ 0
+D10
+$Comp
+L GND #PWR06
+U 1 1 598E9097
+P 3250 2300
+F 0 "#PWR06" H 3250 2050 50  0001 C CNN
+F 1 "GND" H 3250 2150 50  0000 C CNN
+F 2 "" H 3250 2300 50  0000 C CNN
+F 3 "" H 3250 2300 50  0000 C CNN
+	1    3250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1900 3600 1900
+$Comp
+L +5V #PWR07
+U 1 1 598EA76B
+P 7450 1700
+F 0 "#PWR07" H 7450 1550 50  0001 C CNN
+F 1 "+5V" H 7450 1840 50  0000 C CNN
+F 2 "" H 7450 1700 50  0000 C CNN
+F 3 "" H 7450 1700 50  0000 C CNN
+	1    7450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR08
+U 1 1 598EA794
+P 7750 1700
+F 0 "#PWR08" H 7750 1550 50  0001 C CNN
+F 1 "+3.3V" H 7750 1840 50  0000 C CNN
+F 2 "" H 7750 1700 50  0000 C CNN
+F 3 "" H 7750 1700 50  0000 C CNN
+	1    7750 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10000 100 
+Text GLabel 3350 5600 2    60   Input ~ 0
+c_attention
+$Comp
+L R R1
+U 1 1 598ED6C3
+P 5550 1700
+F 0 "R1" V 5630 1700 50  0000 C CNN
+F 1 "1k" V 5550 1700 50  0000 C CNN
+F 2 "MYLIB:R3" V 5480 1700 50  0001 C CNN
+F 3 "" H 5550 1700 50  0000 C CNN
+	1    5550 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 598ED8B1
+P 5400 1700
+F 0 "#PWR09" H 5400 1550 50  0001 C CNN
+F 1 "+5V" H 5400 1840 50  0000 C CNN
+F 2 "" H 5400 1700 50  0000 C CNN
+F 3 "" H 5400 1700 50  0000 C CNN
+	1    5400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 598EDD7D
+P 4050 5550
+F 0 "#PWR010" H 4050 5300 50  0001 C CNN
+F 1 "GND" H 4050 5400 50  0000 C CNN
+F 2 "" H 4050 5550 50  0000 C CNN
+F 3 "" H 4050 5550 50  0000 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR011
+U 1 1 598EE069
+P 4200 5300
+F 0 "#PWR011" H 4200 5150 50  0001 C CNN
+F 1 "+9V" H 4200 5440 50  0000 C CNN
+F 2 "" H 4200 5300 50  0000 C CNN
+F 3 "" H 4200 5300 50  0000 C CNN
+	1    4200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5300 4200 5300
+Wire Wire Line
+	4050 5400 3350 5400
+Wire Wire Line
+	3350 5500 4300 5500
+$Comp
+L R R2
+U 1 1 598EE826
+P 5550 2150
+F 0 "R2" V 5630 2150 50  0000 C CNN
+F 1 "1k" V 5550 2150 50  0000 C CNN
+F 2 "MYLIB:R3" V 5480 2150 50  0001 C CNN
+F 3 "" H 5550 2150 50  0000 C CNN
+	1    5550 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 598EE82C
+P 5400 2150
+F 0 "#PWR012" H 5400 2000 50  0001 C CNN
+F 1 "+5V" H 5400 2290 50  0000 C CNN
+F 2 "" H 5400 2150 50  0000 C CNN
+F 3 "" H 5400 2150 50  0000 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 4700 2    60   Input ~ 0
+c_attention
+Text Label 4000 1800 3    60   ~ 0
+~RESET
+Text Label 6250 4200 2    60   ~ 0
+~RESET
+Wire Wire Line
+	3250 2200 4100 2200
+NoConn ~ 6550 3600
+NoConn ~ 7500 3900
+NoConn ~ 7500 4000
+NoConn ~ 7500 4800
+NoConn ~ 7500 4600
+NoConn ~ 7500 5300
+NoConn ~ 7500 5400
+NoConn ~ 7500 5500
+NoConn ~ 7500 5600
+NoConn ~ 3350 5800
+$Comp
+L +5V #PWR013
+U 1 1 598F2FD0
+P 1150 750
+F 0 "#PWR013" H 1150 600 50  0001 C CNN
+F 1 "+5V" H 1150 890 50  0000 C CNN
+F 2 "" H 1150 750 50  0000 C CNN
+F 3 "" H 1150 750 50  0000 C CNN
+	1    1150 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 598F3034
+P 1950 800
+F 0 "#PWR014" H 1950 550 50  0001 C CNN
+F 1 "GND" H 1950 650 50  0000 C CNN
+F 2 "" H 1950 800 50  0000 C CNN
+F 3 "" H 1950 800 50  0000 C CNN
+	1    1950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR015
+U 1 1 598F3102
+P 750 750
+F 0 "#PWR015" H 750 600 50  0001 C CNN
+F 1 "+9V" H 750 890 50  0000 C CNN
+F 2 "" H 750 750 50  0000 C CNN
+F 3 "" H 750 750 50  0000 C CNN
+	1    750  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 598F3305
+P 1950 800
+F 0 "#FLG016" H 1950 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 980 50  0000 C CNN
+F 2 "" H 1950 800 50  0000 C CNN
+F 3 "" H 1950 800 50  0000 C CNN
+	1    1950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 598F3370
+P 1150 750
+F 0 "#FLG017" H 1150 845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1150 930 50  0000 C CNN
+F 2 "" H 1150 750 50  0000 C CNN
+F 3 "" H 1150 750 50  0000 C CNN
+	1    1150 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG018
+U 1 1 598F33A2
+P 750 750
+F 0 "#FLG018" H 750 845 50  0001 C CNN
+F 1 "PWR_FLAG" H 750 930 50  0000 C CNN
+F 2 "" H 750 750 50  0000 C CNN
+F 3 "" H 750 750 50  0000 C CNN
+	1    750  750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X17 P4
+U 1 1 598F610D
+P 3150 5100
+F 0 "P4" H 3150 6000 50  0000 C CNN
+F 1 "memory&controller" V 3250 5100 50  0000 C CNN
+F 2 "MYLIB:ps_memory_controller" H 3150 5100 50  0001 C CNN
+F 3 "" H 3150 5100 50  0000 C CNN
+	1    3150 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5500 4300 4700
+Connection ~ 4300 4700
+Connection ~ 4050 5400
+$Comp
+L D D1
+U 1 1 59978A6C
+P 7600 1700
+F 0 "D1" H 7600 1800 50  0000 C CNN
+F 1 "D" H 7600 1600 50  0000 C CNN
+F 2 "MYLIB:D3" H 7600 1700 50  0001 C CNN
+F 3 "" H 7600 1700 50  0000 C CNN
+	1    7600 1700
+	-1   0    0    1   
+$EndComp
+Text GLabel 5700 1700 2    60   Input ~ 0
+data
+Text GLabel 3350 5100 2    60   Input ~ 0
+data
+Text GLabel 3350 5200 2    60   Input ~ 0
+command
+Text GLabel 3350 5700 2    60   Input ~ 0
+clock
+Text GLabel 3350 5900 2    60   Input ~ 0
+acknowledge
+Text GLabel 5700 2150 2    60   Input ~ 0
+c_attention
+NoConn ~ 7500 4500
+NoConn ~ 7500 4400
+NoConn ~ 7500 4300
+NoConn ~ 7500 4200
+$Comp
+L +3.3V #PWR019
+U 1 1 5997AE74
+P 1550 750
+F 0 "#PWR019" H 1550 600 50  0001 C CNN
+F 1 "+3.3V" H 1550 890 50  0000 C CNN
+F 2 "" H 1550 750 50  0000 C CNN
+F 3 "" H 1550 750 50  0000 C CNN
+	1    1550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG020
+U 1 1 5997AE9D
+P 1550 750
+F 0 "#FLG020" H 1550 845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 930 50  0000 C CNN
+F 2 "" H 1550 750 50  0000 C CNN
+F 3 "" H 1550 750 50  0000 C CNN
+	1    1550 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 598E9A7B
+P 3150 3550
+F 0 "P1" H 3150 3700 50  0000 C CNN
+F 1 "CONN_01X02" V 3250 3550 50  0000 C CNN
+F 2 "MYLIB:MY_SIL-2" H 3150 3550 50  0001 C CNN
+F 3 "" H 3150 3550 50  0000 C CNN
+	1    3150 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR021
+U 1 1 5997C4EC
+P 3650 3600
+F 0 "#PWR021" H 3650 3450 50  0001 C CNN
+F 1 "+9V" H 3650 3740 50  0000 C CNN
+F 2 "" H 3650 3600 50  0000 C CNN
+F 3 "" H 3650 3600 50  0000 C CNN
+	1    3650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR022
+U 1 1 5997C50F
+P 3500 3500
+F 0 "#PWR022" H 3500 3350 50  0001 C CNN
+F 1 "+5V" H 3500 3640 50  0000 C CNN
+F 2 "" H 3500 3500 50  0000 C CNN
+F 3 "" H 3500 3500 50  0000 C CNN
+	1    3500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3500 3500 3500
+Wire Wire Line
+	3350 3600 3650 3600
+$Comp
+L CONN_01X03 P2
+U 1 1 5997D694
+P 4100 1600
+F 0 "P2" H 4100 1800 50  0000 C CNN
+F 1 "CONN_01X03" V 4200 1600 50  0000 C CNN
+F 2 "MYLIB:MY_SIL-3" H 4100 1600 50  0001 C CNN
+F 3 "" H 4100 1600 50  0000 C CNN
+	1    4100 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 2200 4100 1800
+Text Notes 7000 1450 0    60   ~ 0
+Caution!  It is not exactly 3.3v.
+Text Notes 5300 1400 0    60   ~ 0
+Optional resistor
+Text Notes 3000 1400 0    60   ~ 0
+Select ICSP mode.
+Text Notes 3050 3200 0    60   ~ 0
+When shorting, \nuse 5v for the controller's high voltage.
+$EndSCHEMATC
