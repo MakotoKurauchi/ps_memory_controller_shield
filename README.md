@@ -34,7 +34,7 @@ It is completed by setting pro micro and jumper pins.
   - http://yushakobo.jp/wp-content/uploads/2017/09/MemcardRex.zip
 
 # Reference
-- [Schematic](https://github.com/MakotoKurauchi/ps_memory_controller_shield/pcb/ps_memory_controller_shield.pdf)
+- [Schematic](https://github.com/MakotoKurauchi/ps_memory_controller_shield/blob/master/pcb/ps_memory_controller_shield.pdf)
 
 # Thanks to:
 - [ShendoXT](https://github.com/ShendoXT) - MemCARDuino and MemcardRex creator.
