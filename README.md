@@ -29,9 +29,9 @@ It is completed by setting pro micro and jumper pins.
   - https://github.com/MakotoKurauchi/memcarduino/tree/promicro
 
 
-- Use [this](https://github.com/MakotoKurauchi/memcardrex/tree/promicro) desktop applicaton. Binary is [here](http://yushakobo.jp/wp-content/uploads/2017/09/MemcardRex.zip).
+- Use [this](https://github.com/MakotoKurauchi/memcardrex/tree/promicro) desktop applicaton. Binary is [here](http://yushakobo.jp/blog/wp-content/uploads/2017/09/MemcardRex.zip).
   - https://github.com/MakotoKurauchi/memcardrex/tree/promicro
-  - http://yushakobo.jp/wp-content/uploads/2017/09/MemcardRex.zip
+  - http://yushakobo.jp/blog/wp-content/uploads/2017/09/MemcardRex.zip
 
 # Reference
 - [Schematic](https://github.com/MakotoKurauchi/ps_memory_controller_shield/blob/master/pcb/ps_memory_controller_shield.pdf)
